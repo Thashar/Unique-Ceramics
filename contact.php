@@ -119,12 +119,12 @@ $isPl = current_lang() === 'pl';
         $faqs = $isPl ? [
           ['Jak długo trwa realizacja zamówienia?', 'Standardowe zamówienia wysyłamy w 3–5 dni roboczych. Zamówienia indywidualne to zazwyczaj 2–4 tygodnie.'],
           ['Czy mogę odebrać zamówienie osobiście?', 'Odbiór osobisty jest możliwy po wcześniejszym umówieniu przez telefon lub Instagram.'],
-          ['Czy ceramika nadaje się do zmywarki?', 'Zalecamy mycie ręczne — przedłuża to żywotność glazury i kolorów.'],
+          ['Czy ceramika nadaje się do zmywarki?', 'Tak, ceramika nadaje się do zmywarki.'],
           ['Czy robicie ceramikę z personalizacją?', 'Tak! Możemy wgryźć, namalować lub wytłoczyć dowolny wzór, tekst lub dedykację.'],
         ] : [
           ['How long does an order take?', 'Standard orders are shipped in 3–5 business days. Custom orders typically take 2–4 weeks.'],
           ['Can I collect my order in person?', 'In-person collection is possible after prior arrangement by phone or Instagram.'],
-          ['Is the ceramics dishwasher-safe?', 'We recommend hand washing — it prolongs the life of the glaze and colours.'],
+          ['Is the ceramics dishwasher-safe?', 'Yes, the ceramics are dishwasher safe.'],
           ['Do you make personalised ceramics?', 'Yes! We can carve, paint, or emboss any pattern, text, or dedication.'],
         ];
         foreach ($faqs as [$q, $a]):

@@ -165,8 +165,7 @@ require_once __DIR__ . '/includes/header.php';
       <p>🤍 <?= current_lang() === 'pl' ? 'Ręcznie formowana i wypalana ceramika' : 'Hand-formed and kiln-fired ceramics' ?></p>
       <p>🎨 <?= current_lang() === 'pl' ? 'Unikalne szkliwienie — każdy egzemplarz jest wyjątkowy' : 'Unique glazing — every piece is one of a kind' ?></p>
       <p>🍽️ <?= current_lang() === 'pl' ? 'Bezpieczna do kontaktu z żywnością' : 'Food-safe' ?></p>
-      <p>🫧 <?= current_lang() === 'pl' ? 'Mycie ręczne zalecane' : 'Hand washing recommended' ?></p>
-      <p>🚫 <?= current_lang() === 'pl' ? 'Nie nadaje się do mikrofali i zmywarki' : 'Not suitable for microwave or dishwasher' ?></p>
+      <p>🫧 <?= current_lang() === 'pl' ? 'Nadaje się do zmywarki' : 'Dishwasher safe' ?></p>
     </div>
   </div>
 
