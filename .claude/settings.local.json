@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Select-Object FullName, Extension)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(git init *)",
+      "Bash(git remote *)"
+    ]
+  }
+}

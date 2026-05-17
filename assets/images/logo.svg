@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6F5E"/>
+      <stop offset="100%" style="stop-color:#C4714B"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bg)"/>
+  <!-- Vase / pottery silhouette -->
+  <path d="M100 45 C85 45 75 55 72 65 L68 90 C64 95 60 100 60 110 C60 125 75 138 80 145 L80 155 L120 155 L120 145 C125 138 140 125 140 110 C140 100 136 95 132 90 L128 65 C125 55 115 45 100 45 Z" fill="rgba(255,255,255,0.25)"/>
+  <!-- Opening of vase -->
+  <ellipse cx="100" cy="65" rx="22" ry="8" fill="rgba(255,255,255,0.35)"/>
+  <!-- UC letters -->
+  <text x="100" y="118" font-family="Georgia, serif" font-size="42" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2">UC</text>
+</svg>
