@@ -4,7 +4,8 @@
       "Bash(Select-Object FullName, Extension)",
       "Bash(Format-Table -AutoSize)",
       "Bash(git init *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "WebFetch(domain:uniqueceramics.infinityfree.me)"
     ]
   }
 }
