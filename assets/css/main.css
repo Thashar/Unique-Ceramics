@@ -827,6 +827,9 @@ p:last-child { margin-bottom: 0; }
 .workshop-card p { font-size: .9rem; color: var(--stone); }
 .workshop-price { font-size: 1.1rem; font-weight: 700; color: var(--clay); margin-top: .8rem; }
 
+/* === CURRENCY SYMBOL (CSS Unicode to bypass host encoding issues) === */
+.curr::after { content: " z\142"; }
+
 /* === UTILITIES === */
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
@@ -878,6 +881,41 @@ p:last-child { margin-bottom: 0; }
 }
 .cookie-notice p { margin: 0; flex: 1; min-width: 200px; color: rgba(255,255,255,.8); }
 .cookie-notice .btn { flex-shrink: 0; }
+
+/* === REFRESH NOTIFICATION === */
+.refresh-banner {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99999;
+  background: var(--clay);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  padding: .85rem 1.2rem;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: .88rem;
+  font-family: var(--font-body);
+  max-width: 300px;
+  transform: translateX(120%);
+  transition: transform .35s ease;
+  pointer-events: none;
+}
+.refresh-banner.show { transform: translateX(0); pointer-events: auto; }
+.refresh-banner strong { display: block; font-size: .92rem; margin-bottom: .15rem; }
+.refresh-banner-btn {
+  flex-shrink: 0;
+  background: var(--white);
+  color: var(--clay);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: .4rem .8rem;
+  font-size: .82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 1100px) {

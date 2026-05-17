@@ -249,6 +249,33 @@ document.addEventListener('DOMContentLoaded', () => {
     e.target.reset();
   });
 
+  // === Refresh notification ===
+  (function () {
+    let currentVersion = null;
+    const banner = document.createElement('div');
+    banner.className = 'refresh-banner';
+    banner.innerHTML =
+      '<div><strong>Nowa wersja</strong>Odśwież stronę, aby zobaczyć zmiany.</div>' +
+      '<button class="refresh-banner-btn">Odśwież</button>';
+    banner.querySelector('.refresh-banner-btn').addEventListener('click', () => location.reload(true));
+    document.body.appendChild(banner);
+
+    async function checkVersion() {
+      try {
+        const res = await fetch((typeof BASE_PATH !== 'undefined' ? BASE_PATH : '') + '/version.php?_=' + Date.now());
+        const data = await res.json();
+        if (currentVersion === null) {
+          currentVersion = data.v;
+        } else if (data.v !== currentVersion) {
+          banner.classList.add('show');
+        }
+      } catch {}
+    }
+
+    checkVersion();
+    setInterval(checkVersion, 60000);
+  })();
+
 });
 
 // Inject toast styles if not already in CSS

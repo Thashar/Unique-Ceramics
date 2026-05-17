@@ -32,7 +32,7 @@ define('SITE_FACEBOOK',  '');
 
 // ---- Waluta / Currency ----
 define('CURRENCY',        'PLN');
-define('CURRENCY_SYMBOL', "z\xC5\x82"); // ł in UTF-8 bytes
+define('CURRENCY_SYMBOL', '');
 
 // ---- Wysyłka / Shipping ----
 define('SHIPPING_COST',          18.00);
@@ -69,7 +69,7 @@ function h(mixed $str): string {
 }
 
 function format_price(float $amount): string {
-    return number_format($amount, 2, ',', ' ') . ' ' . CURRENCY_SYMBOL;
+    return number_format($amount, 2, ',', ' ') . '<span class="curr"></span>';
 }
 
 function csrf_token(): string {
