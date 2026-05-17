@@ -97,11 +97,11 @@ require __DIR__ . '/includes/admin-header.php';
       <div class="form-section-title">Wysyłka</div>
       <div class="form-grid">
         <div class="form-group">
-          <label>Koszt wysyłki (<?= CURRENCY_SYMBOL ?>)</label>
+          <label>Koszt wysyłki (PLN)</label>
           <input type="number" name="shipping_cost" value="<?= h(get_setting('shipping_cost', SHIPPING_COST)) ?>" min="0" step="0.01">
         </div>
         <div class="form-group">
-          <label>Darmowa wysyłka od (<?= CURRENCY_SYMBOL ?>)</label>
+          <label>Darmowa wysyłka od (PLN)</label>
           <input type="number" name="shipping_free_from" value="<?= h(get_setting('shipping_free_from', SHIPPING_FREE_FROM)) ?>" min="0" step="1">
           <div class="form-hint">Wpisz 0 aby wyłączyć darmową wysyłkę</div>
         </div>
