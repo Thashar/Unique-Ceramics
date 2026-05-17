@@ -3,6 +3,10 @@
 // UNIQUE CERAMICS — KONFIGURACJA / CONFIGURATION
 // ================================================
 
+if (!headers_sent()) {
+    header('Content-Type: text/html; charset=UTF-8');
+}
+
 // ---- Ścieżka bazowa / Base path ----
 // Jeśli strona jest w podkatalogu np. /ceramics, wpisz '/ceramics'
 // If the site is in a subdirectory e.g. /ceramics, enter '/ceramics'

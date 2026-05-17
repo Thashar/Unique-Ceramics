@@ -936,9 +936,10 @@ p:last-child { margin-bottom: 0; }
   .btn-lg { padding: .8rem 1.8rem; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.5rem; }
+  .logo-img { width: 36px; height: 36px; }
+  .logo-text { font-size: 1rem; }
   .logo-text span { display: none; }
-  .logo-text { font-size: 1.1rem; }
-  .cart-btn { padding: .5rem .7rem; }
+  .cart-btn { padding: .45rem .65rem; font-size: .78rem; }
   .products-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .product-card-body { padding: .7rem .8rem; }
   .product-card-name { font-size: .9rem; }
