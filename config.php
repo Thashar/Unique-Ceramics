@@ -32,7 +32,7 @@ define('SITE_FACEBOOK',  '');
 
 // ---- Waluta / Currency ----
 define('CURRENCY',        'PLN');
-define('CURRENCY_SYMBOL', 'z&#322;');
+define('CURRENCY_SYMBOL', "z\xC5\x82"); // ł in UTF-8 bytes
 
 // ---- Wysyłka / Shipping ----
 define('SHIPPING_COST',          18.00);

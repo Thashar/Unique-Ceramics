@@ -156,9 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const subs = document.querySelector('.cart-subtotal-val');
     const ship = document.querySelector('.cart-shipping-val');
     const tot  = document.querySelector('.cart-total-val');
-    if (subs) subs.textContent = data.subtotal_formatted;
-    if (ship) ship.textContent = data.shipping_formatted;
-    if (tot)  tot.textContent  = data.total_formatted;
+    if (subs) subs.innerHTML = data.subtotal_formatted;
+    if (ship) ship.innerHTML = data.shipping_formatted;
+    if (tot)  tot.innerHTML  = data.total_formatted;
 
     const bar  = document.querySelector('.free-ship-fill');
     if (bar && data.free_percent !== undefined) {
