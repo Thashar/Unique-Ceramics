@@ -3,7 +3,7 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/functions.php';
 
-$pageTitle = current_lang() === 'pl' ? 'O nas' : 'About us';
+$pageTitle = current_lang() === 'pl' ? 'O mnie' : 'About me';
 require_once __DIR__ . '/includes/header.php';
 ?>
 
@@ -20,7 +20,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="about-section">
       <div>
-        <h2><?= current_lang() === 'pl' ? 'Nasza historia' : 'Our story' ?></h2>
+        <h2><?= current_lang() === 'pl' ? 'Moja historia' : 'My story' ?></h2>
         <p style="color:var(--stone);line-height:1.8;margin-top:1rem;margin-bottom:1rem"><?= t('about.story') ?></p>
         <p style="color:var(--stone);line-height:1.8"><?= t('about.mission') ?></p>
         <a href="<?= url('custom-order.php') ?>" class="btn btn-primary" style="margin-top:1.5rem">
@@ -60,23 +60,23 @@ require_once __DIR__ . '/includes/header.php';
 <section class="section" style="background:var(--white)">
   <div class="container">
     <h2 class="section-title"><?= current_lang() === 'pl' ? 'Jak powstaje ceramika?' : 'How is ceramics made?' ?></h2>
-    <p class="section-sub"><?= current_lang() === 'pl' ? 'Każdy produkt przechodzi przez nasze ręce kilka razy' : 'Every product passes through our hands several times' ?></p>
+    <p class="section-sub"><?= current_lang() === 'pl' ? 'Każdy produkt przechodzi przez moje ręce kilka razy' : 'Every product passes through my hands several times' ?></p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;margin-top:1rem">
       <?php
       $steps = current_lang() === 'pl'
         ? [
             ['🏺', 'Formowanie', 'Glina jest ręcznie formowana na kole lub w formie'],
             ['🔥', 'Suszenie', 'Produkt suszy się powoli, zachowując swój kształt'],
-            ['🎨', 'Szkliwienie', 'Nakładamy szkliwo — każda sztuka inaczej'],
+            ['🎨', 'Szkliwienie', 'Nakładam szkliwo — każda sztuka inaczej'],
             ['♨️', 'Wypalanie', 'Piec w temperaturze ~1200°C nadaje ceramice trwałość'],
-            ['✨', 'Kontrola', 'Każdy produkt sprawdzamy przed wysyłką'],
+            ['✨', 'Kontrola', 'Każdy produkt sprawdzam przed wysyłką'],
           ]
         : [
             ['🏺', 'Forming', 'Clay is hand-formed on the wheel or in a mould'],
             ['🔥', 'Drying', 'The piece dries slowly, retaining its shape'],
-            ['🎨', 'Glazing', 'We apply glaze — each piece differently'],
+            ['🎨', 'Glazing', 'I apply glaze — each piece differently'],
             ['♨️', 'Firing', 'The kiln at ~1200°C gives the ceramics durability'],
-            ['✨', 'Quality check', 'We inspect every piece before shipping'],
+            ['✨', 'Quality check', 'I inspect every piece before shipping'],
           ];
       foreach ($steps as $i => [$icon, $title, $text]):
       ?>
@@ -96,7 +96,7 @@ require_once __DIR__ . '/includes/header.php';
 <!-- Gallery -->
 <section class="section-sm" style="background:var(--sand)">
   <div class="container">
-    <h2 class="section-title"><?= current_lang() === 'pl' ? 'Nasze prace' : 'Our work' ?></h2>
+    <h2 class="section-title"><?= current_lang() === 'pl' ? 'Moje prace' : 'My work' ?></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin-top:1.5rem">
       <?php
       $galleryPhotos = [
@@ -125,7 +125,7 @@ require_once __DIR__ . '/includes/header.php';
     <div class="workshop-cta">
       <div>
         <h2><?= current_lang() === 'pl' ? 'Masz pytania?' : 'Have questions?' ?></h2>
-        <p><?= current_lang() === 'pl' ? 'Chętnie opowiemy Ci więcej o naszej ceramice i możliwościach personalizacji.' : 'We\'d love to tell you more about our ceramics and personalisation options.' ?></p>
+        <p><?= current_lang() === 'pl' ? 'Chętnie opowiem Ci więcej o mojej ceramice i możliwościach personalizacji.' : 'I\'d love to tell you more about my ceramics and personalisation options.' ?></p>
       </div>
       <div style="display:flex;gap:.8rem;flex-wrap:wrap">
         <a href="<?= url('contact.php') ?>" class="btn btn-outline">
