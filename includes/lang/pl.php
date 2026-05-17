@@ -136,7 +136,7 @@ return [
         'description' => 'Dodatkowy opis / inspiracje',
         'description_ph'=> 'Opisz swój pomysł, możesz podać link do zdjęcia inspiracji...',
         'budget'      => 'Orientacyjny budżet',
-        'budget_opt'  => ['Do 100 zł', '100–300 zł', '300–600 zł', 'Powyżej 600 zł', 'Do ustalenia'],
+        'budget_opt'  => ['Do 100 z&#322;', '100&ndash;300 z&#322;', '300&ndash;600 z&#322;', 'Powy&#380;ej 600 z&#322;', 'Do ustalenia'],
         'deadline'    => 'Oczekiwany termin realizacji',
         'submit'      => 'Wyślij zapytanie',
         'success'     => 'Dziękuję! Skontaktuję się z Tobą w ciągu 48 godzin.',

@@ -63,12 +63,12 @@ $isPl = current_lang() === 'pl';
     <div class="workshop-cards">
       <?php
       $workshops = $isPl ? [
-        ['🎂', 'Warsztaty urodzinowe', 'Wyjątkowe urodziny w towarzystwie gliny! Idealne dla grup od 4 osób. Tworzysz, śmiejesz się i wychodzisz z własnoręcznym prezentem.', 'od 80 zł / os.'],
-        ['💍', 'Wieczory panieńskie', 'Niezapomniane wieczory panieńskie z ceramiką. Oryginalna alternatywa dla standardowych imprez. Możliwość degustacji wina.', 'od 100 zł / os.'],
+        ['🎂', 'Warsztaty urodzinowe', 'Wyjątkowe urodziny w towarzystwie gliny! Idealne dla grup od 4 osób. Tworzysz, śmiejesz się i wychodzisz z własnoręcznym prezentem.', 'od 80 z&#322; / os.'],
+        ['💍', 'Wieczory panieńskie', 'Niezapomniane wieczory panieńskie z ceramiką. Oryginalna alternatywa dla standardowych imprez. Możliwość degustacji wina.', 'od 100 z&#322; / os.'],
         ['🏢', 'Team Building', 'Integracja przez ceramikę dla firm i grup zawodowych. Budujecie coś razem — w przenośni i dosłownie. Oferta grupowa.', 'wycena indywidualna'],
-        ['🌿', 'Warsztaty otwarte', 'Regularne warsztaty dla osób indywidualnych. Nauka podstaw toczenia i ręcznego formowania gliny.', 'od 90 zł / os.'],
-        ['🎁', 'Vouchery prezentowe', 'Podaruj komuś wyjątkowe doświadczenie! Vouchery na warsztaty dostępne w różnych nominałach.', 'od 80 zł'],
-        ['👨‍👩‍👧', 'Dla dzieci i rodzin', 'Warsztaty ceramiczne dla dzieci od 8 lat i całych rodzin. Bezpieczna glina, mnóstwo zabawy i kreatywności.', 'od 60 zł / os.'],
+        ['🌿', 'Warsztaty otwarte', 'Regularne warsztaty dla osób indywidualnych. Nauka podstaw toczenia i ręcznego formowania gliny.', 'od 90 z&#322; / os.'],
+        ['🎁', 'Vouchery prezentowe', 'Podaruj komuś wyjątkowe doświadczenie! Vouchery na warsztaty dostępne w różnych nominałach.', 'od 80 z&#322;'],
+        ['👨‍👩‍👧', 'Dla dzieci i rodzin', 'Warsztaty ceramiczne dla dzieci od 8 lat i całych rodzin. Bezpieczna glina, mnóstwo zabawy i kreatywności.', 'od 60 z&#322; / os.'],
       ] : [
         ['🎂', 'Birthday workshops', 'Unique birthday with clay! Perfect for groups from 4 people. You create, laugh, and leave with a handmade gift.', 'from 80 PLN / person'],
         ['💍', "Hen parties", 'Unforgettable hen parties with ceramics. An original alternative to standard parties. Wine tasting available.', 'from 100 PLN / person'],
