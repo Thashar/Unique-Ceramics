@@ -352,6 +352,9 @@ textarea.rich { min-height: 160px; resize: vertical; }
 /* === Confirm dialog === */
 .confirm-delete { color: #c0392b; }
 
+/* === CURRENCY SYMBOL === */
+.curr::after { content: " z\142"; }
+
 /* === UTILITIES === */
 .text-center { text-align: center; }
 .text-right  { text-align: right; }

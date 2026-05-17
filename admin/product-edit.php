@@ -158,7 +158,7 @@ require __DIR__ . '/includes/admin-header.php';
       <div class="card">
         <div class="card-header"><h3>Cena i dostępność</h3></div>
         <div class="form-group">
-          <label>Cena (<?= CURRENCY_SYMBOL ?>) *</label>
+          <label>Cena (PLN) *</label>
           <input type="number" name="price" value="<?= h($product['price'] ?? $_POST['price'] ?? '') ?>"
                  min="0.01" step="0.01" required>
         </div>

@@ -11,7 +11,7 @@ $adminName = $_SESSION['admin_name'] ?? 'Admin';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="<?= BASE_PATH ?>/assets/css/admin.css">
+  <link rel="stylesheet" href="<?= BASE_PATH ?>/assets/css/admin.css?v=<?= filemtime(ROOT_DIR . '/assets/css/admin.css') ?>">
   <script>const BASE_PATH = '<?= BASE_PATH ?>', CSRF_TOKEN = '<?= csrf_token() ?>';</script>
 </head>
 <body>
