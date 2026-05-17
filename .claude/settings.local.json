@@ -5,7 +5,11 @@
       "Bash(Format-Table -AutoSize)",
       "Bash(git init *)",
       "Bash(git remote *)",
-      "WebFetch(domain:uniqueceramics.infinityfree.me)"
+      "WebFetch(domain:uniqueceramics.infinityfree.me)",
+      "Bash(dir \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\assets\\\\images\")",
+      "Bash(dir \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\uploads\\\\products\")",
+      "Bash(Select-Object -First 20)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\" -File | Where-Object { $_.Extension -match \"\\\\.\\(jpg|jpeg|png|gif|webp\\)\" })"
     ]
   }
 }
