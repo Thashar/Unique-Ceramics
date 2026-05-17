@@ -22,7 +22,7 @@ return [
         'categories_title' => 'Kategorie',
         'categories_sub'   => 'Odkryj moją kolekcję ceramiki użytkowej',
         'about_title'      => 'Ręcznie tworzone z sercem',
-        'about_text'       => 'Od 20 lat zajmuję się ceramiką w obszarze przemysłu artystycznego — moje doświadczenie przeniosłam na ceramikę artystyczną, którą tworzę od około roku. Każdą pracę wykonuję samodzielnie, dbając o detal, estetykę i niepowtarzalny charakter wyrobów.',
+        'about_text'       => 'Od 20 lat zajmuję się ceramiką w obszarze przemysłu, dlatego moje doświadczenie przeniosłam na ceramikę artystyczną, którą zajmuję się od około roku. Każdą pracę wykonuję samodzielnie, dbając o detale, estetykę i niepowtarzalny charakter wyrobów.',
         'about_cta'        => 'Dowiedz się więcej',
         'values'           => [
             ['icon' => '🤍', 'title' => 'Ręcznie wykonane', 'text' => 'Każdy element formowany i zdobiony z dbałością o każdy detal'],
@@ -144,8 +144,8 @@ return [
     ],
     'about' => [
         'title'   => 'O mnie',
-        'story'   => 'Od 20 lat zajmuję się ceramiką w obszarze przemysłu artystycznego, dlatego moje doświadczenie przeniosłam na ceramikę artystyczną, którą tworzę od około roku. Tworzenie unikalnych prac stało się dla mnie prawdziwą pasją i sposobem na wyrażanie kreatywności. W tym czasie stworzyłam własną, kameralną pracownię, w której powstają ręcznie wykonywane przedmioty użytkowe i dekoratywne. Swoją inspirację czerpię przede wszystkim z prostych form oraz rzemiosła artystycznego.',
-        'mission' => 'Każdą pracę wykonuję samodzielnie, dbając o detal, estetykę i niepowtarzalny charakter wyrobów. Ceramika daje mi ogromną satysfakcję oraz pozwala odnaleźć wewnętrzny spokój i chwilę wyciszenia w tym jakże zabieganym świecie. Daje mi to też motywację do ciągłego rozwijania swoich umiejętności oraz poszukiwania nowych pomysłów.',
+        'story'   => 'Od 20 lat zajmuję się ceramiką w obszarze przemysłu, dlatego moje doświadczenie przeniosłam na ceramikę artystyczną, którą zajmuję się od około roku. Tworzenie unikatowych prac stało się dla mnie prawdziwą pasją i sposobem na wyrażanie kreatywności. W tym czasie stworzyłam własną, kameralną pracownię, w której powstają ręcznie wykonywane przedmioty użytkowe i dekoracyjne. Swoją inspirację czerpię przede wszystkim z prostych form oraz rzemiosła artystycznego.',
+        'mission' => 'Każdą pracę wykonuję samodzielnie, dbając o detale, estetykę i niepowtarzalny charakter wyrobów. Ceramika daje mi ogromną satysfakcję oraz pozwala odnaleźć wewnętrzny spokój i chwilę wyciszenia w tym jakże zabieganym świecie. Daje mi to też motywację do ciągłego rozwijania swoich umiejętności oraz poszukiwania nowych pomysłów.',
         'values_title' => 'Moje wartości',
     ],
     'workshops' => [
