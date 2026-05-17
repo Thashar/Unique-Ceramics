@@ -8,7 +8,7 @@
       <!-- Brand -->
       <div class="footer-col">
         <div class="footer-logo">
-          <img src="<?= BASE_PATH ?>/assets/images/logo.svg" alt="<?= SITE_NAME ?>" onerror="this.style.display='none'">
+          <img src="<?= BASE_PATH ?>/assets/images/logo.jpg" alt="<?= SITE_NAME ?>" onerror="this.style.display='none'">
           <span class="footer-logo-name"><?= SITE_NAME ?></span>
         </div>
         <p class="footer-tagline"><?= t('footer.tagline') ?></p>
