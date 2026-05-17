@@ -22,7 +22,7 @@ $isAdmin = strpos($_SERVER['PHP_SELF'], '/admin/') !== false;
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="<?= BASE_PATH ?>/assets/css/main.css">
+  <link rel="stylesheet" href="<?= BASE_PATH ?>/assets/css/main.css?v=<?= filemtime(ROOT_DIR . '/assets/css/main.css') ?>">
   <?php if (isset($extraHead)) echo $extraHead; ?>
   <script>
     const BASE_PATH   = '<?= BASE_PATH ?>';
