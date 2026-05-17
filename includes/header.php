@@ -55,7 +55,7 @@ $isAdmin = strpos($_SERVER['PHP_SELF'], '/admin/') !== false;
     <div class="nav-wrap">
       <!-- Logo -->
       <a href="<?= url('index.php') ?>" class="logo">
-        <img src="<?= BASE_PATH ?>/assets/images/logo.svg" alt="<?= SITE_NAME ?>" class="logo-img" onerror="this.style.display='none'">
+        <img src="<?= BASE_PATH ?>/assets/images/logo.jpg" alt="<?= SITE_NAME ?>" class="logo-img" onerror="this.style.display='none'">
         <div class="logo-text">
           Unique Ceramics
           <span><?= t('footer.tagline') ?></span>

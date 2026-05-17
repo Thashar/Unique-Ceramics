@@ -29,11 +29,11 @@ require_once __DIR__ . '/includes/header.php';
         </a>
       </div>
       <div class="about-images">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260508-WA0011.jpg" alt="Unique Ceramics workshop"
+        <img src="<?= BASE_PATH ?>/assets/images/about-photo.jpg" alt="Unique Ceramics — ceramika na wystawie"
              onerror="this.parentElement.innerHTML='<div class=\'placeholder-img\' style=\'height:280px\'>🏺</div>'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0033.jpg" alt="Ceramic mug with heart"
+        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0033.jpg" alt="Ceramiczny kubek"
              onerror="this.style.display='none'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0040.jpg" alt="Ceramic coffee set"
+        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0040.jpg" alt="Zestaw ceramiczny"
              onerror="this.style.display='none'">
       </div>
     </div>

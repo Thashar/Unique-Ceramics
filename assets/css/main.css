@@ -166,7 +166,7 @@ p:last-child { margin-bottom: 0; }
   gap: .75rem;
   flex-shrink: 0;
 }
-.logo-img { width: 48px; height: 48px; object-fit: contain; }
+.logo-img { width: 48px; height: 48px; object-fit: contain; mix-blend-mode: multiply; }
 .logo-text { font-family: var(--font-head); font-size: 1.25rem; font-weight: 700; line-height: 1.1; }
 .logo-text span { display: block; font-size: .7rem; font-family: var(--font-body); font-weight: 400; color: var(--stone); letter-spacing: .08em; text-transform: uppercase; }
 
