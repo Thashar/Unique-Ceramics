@@ -935,7 +935,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; }
   .hero-image { display: none; }
-  .hero-content { padding: 2.5rem 0 3rem; text-align: center; }
+  .hero-content { padding-top: 2.5rem; padding-bottom: 3rem; text-align: center; }
   .hero-btns { justify-content: center; }
   .hero-sub { margin: 0 auto 1.5rem; font-size: 1rem; max-width: 100%; }
   .hero-tag { margin-bottom: .8rem; }
@@ -969,8 +969,8 @@ p:last-child { margin-bottom: 0; }
   .categories-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
   .cart-table th:nth-child(3),
   .cart-table td:nth-child(3) { display: none; }
-  .section    { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-  .section-sm { padding-top: 2.2rem; padding-bottom: 2.2rem; }
+  .section    { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .section-sm { padding-top: 1.6rem; padding-bottom: 1.6rem; }
 }
 
 @media (max-width: 640px) {
@@ -990,7 +990,7 @@ p:last-child { margin-bottom: 0; }
   body { font-size: .92rem; line-height: 1.6; }
   .hero h1 { font-size: 1.45rem; margin-bottom: .8rem; }
   .hero-sub { font-size: .92rem; }
-  .hero-content { padding: 2rem 0 2.5rem; }
+  .hero-content { padding-top: 2rem; padding-bottom: 2.5rem; }
   .logo-img { width: 36px; height: 36px; }
   .logo-text { font-size: .95rem; }
   .logo-text span { display: none; }
@@ -1005,6 +1005,6 @@ p:last-child { margin-bottom: 0; }
   .workshop-cta { padding: 2rem 1.2rem; }
   .custom-form-card { padding: 1.2rem; }
   .checkout-form-card { padding: 1.2rem; }
-  .section    { padding-top: 2.8rem; padding-bottom: 2.8rem; }
-  .section-sm { padding-top: 2rem;   padding-bottom: 2rem; }
+  .section    { padding-top: 2rem; padding-bottom: 2rem; }
+  .section-sm { padding-top: 1.2rem; padding-bottom: 1.2rem; }
 }
