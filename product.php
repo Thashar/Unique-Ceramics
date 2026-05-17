@@ -25,17 +25,17 @@ require_once __DIR__ . '/includes/header.php';
 <div class="container section-sm">
   <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="<?= url('index.php') ?>"><?= t('nav.home') ?></a>
-    <span class="breadcrumb-sep">/</span>
-    <a href="<?= url('shop.php') ?>"><?= t('nav.shop') ?></a>
+    <a href="<?= url('index.php') ?>" class="bc-skip"><?= t('nav.home') ?></a>
+    <span class="breadcrumb-sep bc-skip">/</span>
+    <a href="<?= url('shop.php') ?>" class="bc-skip"><?= t('nav.shop') ?></a>
     <?php if ($product['cat_name_pl']): ?>
-      <span class="breadcrumb-sep">/</span>
-      <a href="<?= url('shop.php?cat=' . slugify($product['cat_name_pl'])) ?>">
+      <span class="breadcrumb-sep bc-skip">/</span>
+      <a href="<?= url('shop.php?cat=' . slugify($product['cat_name_pl'])) ?>" class="bc-cat">
         <?= h($product['cat_name_' . current_lang()] ?: $product['cat_name_pl']) ?>
       </a>
     <?php endif; ?>
     <span class="breadcrumb-sep">/</span>
-    <span><?= product_name($product) ?></span>
+    <span class="bc-current"><?= product_name($product) ?></span>
   </div>
 
   <!-- Product Detail -->

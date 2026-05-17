@@ -759,10 +759,19 @@ p:last-child { margin-bottom: 0; }
   font-size: .82rem;
   color: var(--stone);
   padding: 1rem 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
-.breadcrumb a { color: var(--stone); }
+.breadcrumb a { color: var(--stone); white-space: nowrap; }
 .breadcrumb a:hover { color: var(--terracotta); }
-.breadcrumb-sep { color: var(--border); }
+.breadcrumb-sep { color: var(--border); flex-shrink: 0; }
+.bc-cat { flex-shrink: 0; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bc-current { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+
+@media (max-width: 640px) {
+  .bc-skip { display: none; }
+  .bc-cat { max-width: 120px; }
+}
 
 /* === FOOTER === */
 .site-footer { background: var(--charcoal); color: rgba(255,255,255,.75); padding-top: 4rem; }
