@@ -78,8 +78,8 @@ p:last-child { margin-bottom: 0; }
 .container-sm { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
 .section { padding-top: 5rem; padding-bottom: 5rem; }
 .section-sm { padding-top: 3rem; padding-bottom: 3rem; }
-.section-title { text-align: center; margin-bottom: .6rem; }
-.section-sub   { text-align: center; color: var(--stone); margin-bottom: 3rem; font-size: 1.05rem; }
+.section-title { text-align: center; margin-bottom: .8rem; }
+.section-sub   { text-align: center; color: var(--stone); margin-bottom: 2.5rem; font-size: 1.05rem; }
 
 /* === BUTTONS === */
 .btn {
@@ -935,7 +935,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-image { display: none; }
-  .hero-content { padding: 3rem 0; text-align: center; }
+  .hero-content { padding: 3.5rem 0; text-align: center; }
   .hero-btns { justify-content: center; }
   .hero-sub { margin: 0 auto 2rem; }
 
@@ -968,7 +968,8 @@ p:last-child { margin-bottom: 0; }
   .categories-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
   .cart-table th:nth-child(3),
   .cart-table td:nth-child(3) { display: none; }
-  .section { padding-top: 3rem; padding-bottom: 3rem; }
+  .section    { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .section-sm { padding-top: 2.2rem; padding-bottom: 2.2rem; }
 }
 
 @media (max-width: 640px) {
@@ -1000,6 +1001,6 @@ p:last-child { margin-bottom: 0; }
   .workshop-cta { padding: 2rem 1.2rem; }
   .custom-form-card { padding: 1.2rem; }
   .checkout-form-card { padding: 1.2rem; }
-  .section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-  .section-sm { padding-top: 1.8rem; padding-bottom: 1.8rem; }
+  .section    { padding-top: 2.8rem; padding-bottom: 2.8rem; }
+  .section-sm { padding-top: 2rem;   padding-bottom: 2rem; }
 }
