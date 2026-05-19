@@ -94,10 +94,25 @@ function product_description(array $product): string {
 
 // Category functions
 function get_categories(bool $activeOnly = true): array {
-    $sql = 'SELECT * FROM categories';
-    if ($activeOnly) $sql .= ' WHERE active = 1';
-    $sql .= ' ORDER BY sort_order ASC, name_pl ASC';
-    return db_fetch_all($sql);
+    $sql = "SELECT c.*,
+        (SELECT p.images FROM products p
+         WHERE p.category_id = c.id AND p.active = 1
+           AND p.images IS NOT NULL AND p.images != '[]'
+         ORDER BY p.featured DESC, p.stock DESC, p.id DESC
+         LIMIT 1) AS fallback_images
+        FROM categories c";
+    if ($activeOnly) $sql .= ' WHERE c.active = 1';
+    $sql .= ' ORDER BY c.sort_order ASC, c.name_pl ASC';
+    $rows = db_fetch_all($sql);
+    foreach ($rows as &$row) {
+        $row['fallback_image'] = '';
+        if (empty($row['image']) && !empty($row['fallback_images'])) {
+            $imgs = json_decode($row['fallback_images'], true);
+            $row['fallback_image'] = !empty($imgs) ? $imgs[0] : '';
+        }
+        unset($row['fallback_images']);
+    }
+    return $rows;
 }
 
 function get_category_by_slug(string $slug): ?array {

@@ -58,8 +58,9 @@ $categories  = get_categories();
       <?php foreach ($categories as $cat): ?>
         <a href="<?= url('shop.php?cat=' . $cat['slug']) ?>" class="cat-card">
           <div class="cat-card-img">
-            <?php if ($cat['image']): ?>
-              <img src="<?= upload_url($cat['image']) ?>" alt="<?= category_name($cat) ?>">
+            <?php $catImg = $cat['image'] ?: ($cat['fallback_image'] ?? ''); ?>
+            <?php if ($catImg): ?>
+              <img src="<?= upload_url($catImg) ?>" alt="<?= category_name($cat) ?>">
             <?php else: ?>
               <div class="placeholder-img">🏺</div>
             <?php endif; ?>
