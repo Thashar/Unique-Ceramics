@@ -76,10 +76,17 @@ p:last-child { margin-bottom: 0; }
 /* === LAYOUT === */
 .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
 .container-sm { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
-.section { padding-top: 3rem; padding-bottom: 3rem; }
-.section-sm { padding-top: 3rem; padding-bottom: 3rem; }
-.section-title { text-align: center; margin-bottom: 2.2rem; }
-.section-sub   { text-align: center; color: var(--stone); margin-bottom: 2rem; font-size: 1.05rem; }
+.section    { padding-top: 0; padding-bottom: 3rem; }
+.section-sm { padding-top: 0; padding-bottom: 3rem; }
+.section:not(:has(.section-head)),
+.section-sm:not(:has(.section-head)) { padding-top: 3rem; }
+.section-head {
+  background: var(--sand);
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+}
+.section-title { text-align: center; margin-bottom: 0; }
+.section-sub   { text-align: center; color: var(--stone); font-size: 1.05rem; margin: .6rem 0 0; }
 
 /* === BUTTONS === */
 .btn {

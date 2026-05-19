@@ -28,9 +28,9 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 </div>
 
 <!-- Intro -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Odkryj radość lepienia!' : 'Discover the joy of pottery!' ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= $isPl ? 'Odkryj radość lepienia!' : 'Discover the joy of pottery!' ?></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
       <div>
         <?php
@@ -59,9 +59,9 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 
 <?php if ($show_types): ?>
 <!-- Workshop types -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Rodzaje warsztatów' : 'Workshop types' ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= $isPl ? 'Rodzaje warsztatów' : 'Workshop types' ?></h2>
     <div class="workshop-cards">
       <?php
       $ws_default = $isPl ? [
@@ -100,9 +100,9 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 
 <?php if ($show_includes): ?>
 <!-- What's included -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Co zawiera warsztat?' : "What's included?" ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= $isPl ? 'Co zawiera warsztat?' : "What's included?" ?></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:1.5rem">
       <?php
       $default_inc = $isPl
@@ -120,7 +120,7 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 <?php endif; ?>
 
 <!-- Booking CTA -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container">
     <div class="workshop-cta">
       <div>

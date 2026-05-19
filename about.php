@@ -34,9 +34,9 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 </div>
 
 <!-- Story -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Moja historia' : 'My story' ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= $isPl ? 'Moja historia' : 'My story' ?></h2>
     <div class="about-section">
       <div>
         <p style="color:var(--stone);line-height:1.8;margin-bottom:1rem"><?= nl2br(h($story)) ?></p>
@@ -59,9 +59,9 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 
 <?php if ($show_values): ?>
 <!-- Values -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= t('about.values_title') ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= t('about.values_title') ?></h2>
     <div class="values-grid">
       <?php
       $vals = $values_db ?? t('home.values');
@@ -83,10 +83,9 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 
 <?php if ($show_process): ?>
 <!-- Process -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Jak powstaje ceramika?' : 'How is ceramics made?' ?></h2><p class="section-sub"><?= $isPl ? 'Każdy produkt przechodzi przez moje ręce kilka razy' : 'Every product passes through my hands several times' ?></p></div></div>
   <div class="container">
-    <h2 class="section-title"><?= $isPl ? 'Jak powstaje ceramika?' : 'How is ceramics made?' ?></h2>
-    <p class="section-sub"><?= $isPl ? 'Każdy produkt przechodzi przez moje ręce kilka razy' : 'Every product passes through my hands several times' ?></p>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.5rem;margin-top:1rem">
       <?php
       $steps = $process_db ?? ($isPl
@@ -113,9 +112,9 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 
 <?php if ($show_gallery): ?>
 <!-- Gallery -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= current_lang() === 'pl' ? 'Moje prace' : 'My work' ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= current_lang() === 'pl' ? 'Moje prace' : 'My work' ?></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.8rem;margin-top:1.5rem">
       <?php
       $galleryPhotos = [
@@ -140,7 +139,7 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 <?php endif; ?>
 
 <!-- CTA -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container">
     <div class="workshop-cta">
       <div>

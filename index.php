@@ -34,7 +34,7 @@ $categories  = get_categories();
 </section>
 
 <!-- VALUES -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container">
     <div class="values-grid">
       <?php foreach (t('home.values') as $val): ?>
@@ -50,10 +50,9 @@ $categories  = get_categories();
 
 <!-- CATEGORIES -->
 <?php if (!empty($categories)): ?>
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= t('home.categories_title') ?></h2><p class="section-sub"><?= t('home.categories_sub') ?></p></div></div>
   <div class="container">
-    <h2 class="section-title"><?= t('home.categories_title') ?></h2>
-    <p class="section-sub"><?= t('home.categories_sub') ?></p>
     <div class="categories-grid">
       <?php foreach ($categories as $cat): ?>
         <a href="<?= url('shop.php?cat=' . $cat['slug']) ?>" class="cat-card">
@@ -75,10 +74,9 @@ $categories  = get_categories();
 
 <!-- FEATURED PRODUCTS -->
 <?php if (!empty($featured)): ?>
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= t('home.featured_title') ?></h2><p class="section-sub"><?= t('home.featured_sub') ?></p></div></div>
   <div class="container">
-    <h2 class="section-title"><?= t('home.featured_title') ?></h2>
-    <p class="section-sub"><?= t('home.featured_sub') ?></p>
     <div class="products-grid">
       <?php foreach ($featured as $product):
         $img = get_product_main_image($product);
@@ -135,9 +133,9 @@ $categories  = get_categories();
 <?php endif; ?>
 
 <!-- ABOUT SECTION -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= t('home.about_title') ?></h2></div></div>
   <div class="container">
-    <h2 class="section-title"><?= t('home.about_title') ?></h2>
     <div class="about-section">
       <div class="about-images">
         <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260508-WA0011.jpg"
@@ -159,7 +157,7 @@ $categories  = get_categories();
 </section>
 
 <!-- WORKSHOP CTA -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container">
     <div class="workshop-cta">
       <div>
@@ -174,9 +172,9 @@ $categories  = get_categories();
 </section>
 
 <!-- INSTAGRAM -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
+  <div class="section-head"><div class="container"><h2 class="section-title"><?= t('home.insta_title') ?></h2></div></div>
   <div class="container text-center">
-    <h2 class="section-title"><?= t('home.insta_title') ?></h2>
     <p style="margin-bottom:1.5rem;color:var(--stone)">
       <a href="<?= SITE_INSTAGRAM ?>" target="_blank" rel="noopener" style="color:var(--terracotta);font-weight:700">
         <i class="fab fa-instagram"></i> @unique.ceramics
