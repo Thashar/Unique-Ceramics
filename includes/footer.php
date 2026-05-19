@@ -9,10 +9,12 @@
       <div class="footer-col">
         <div class="footer-logo">
           <img src="<?= BASE_PATH ?>/assets/images/logo.png?v=<?= filemtime(ROOT_DIR . '/assets/images/logo.png') ?>" alt="<?= SITE_NAME ?>" onerror="this.style.display='none'">
-          <span class="footer-logo-name"><?= SITE_NAME ?></span>
+          <div>
+            <div class="footer-logo-name"><?= SITE_NAME ?></div>
+            <div class="footer-tagline"><?= t('footer.tagline') ?></div>
+          </div>
         </div>
-        <p class="footer-tagline"><?= t('footer.tagline') ?></p>
-        <div class="footer-social">
+        <div class="footer-social" style="margin-top:.9rem">
           <?php if (SITE_INSTAGRAM): ?>
             <a href="<?= SITE_INSTAGRAM ?>" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <?php endif; ?>
