@@ -41,8 +41,8 @@
           <li><a href="<?= url('about.php') ?>"><?= t('nav.about') ?></a></li>
           <li><a href="<?= url('workshops.php') ?>"><?= t('nav.workshops') ?></a></li>
           <li><a href="<?= url('contact.php') ?>"><?= t('nav.contact') ?></a></li>
-          <li><a href="<?= url('contact.php') ?>"><?= t('footer.terms') ?></a></li>
-          <li><a href="<?= url('contact.php') ?>"><?= t('footer.privacy') ?></a></li>
+          <li><a href="<?= url('regulamin.php') ?>"><?= t('footer.terms') ?></a></li>
+          <li><a href="<?= url('regulamin.php') ?>"><?= t('footer.privacy') ?></a></li>
         </ul>
       </div>
 
@@ -79,8 +79,8 @@
         <small><?= t('footer.payment_methods') ?>: <strong>Przelew · PayU · Przelewy24 · Stripe</strong></small>
       </div>
       <div class="footer-links">
-        <a href="<?= url('contact.php') ?>"><?= t('footer.terms') ?></a>
-        <a href="<?= url('contact.php') ?>"><?= t('footer.privacy') ?></a>
+        <a href="<?= url('regulamin.php') ?>"><?= t('footer.terms') ?></a>
+        <a href="<?= url('regulamin.php') ?>"><?= t('footer.privacy') ?></a>
       </div>
     </div>
 
