@@ -38,19 +38,10 @@ $isPl = current_lang() === 'pl';
           <i class="fas fa-calendar-check"></i> <?= t('workshops.book_cta') ?>
         </a>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0043.jpg"
-             alt="Ceramic workshop"
-             style="border-radius:12px;object-fit:cover;height:200px;width:100%"
-             onerror="this.style.display='none'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0044.jpg"
-             alt="Ceramic workshop"
-             style="border-radius:12px;object-fit:cover;height:200px;width:100%"
-             onerror="this.style.display='none'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0046.jpg"
-             alt="Ceramic workshop"
-             style="border-radius:12px;object-fit:cover;height:200px;width:100%;grid-column:1/-1"
-             onerror="this.style.display='none'">
+      <div>
+        <img src="<?= BASE_PATH ?>/assets/images/warsztaty-photo.jpg"
+             alt="Pracownia ceramiczna Unique Ceramics"
+             style="border-radius:12px;object-fit:cover;width:100%;height:360px">
       </div>
     </div>
   </div>
