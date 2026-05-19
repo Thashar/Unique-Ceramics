@@ -27,7 +27,7 @@ $categories  = get_categories();
     </div>
   </div>
   <div class="hero-image">
-    <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0032.jpg"
+    <img src="<?= BASE_PATH ?>/assets/images/hero.jpg"
          alt="Unique Ceramics — handmade mugs"
          onerror="this.parentElement.style.background='var(--sand)'">
   </div>
