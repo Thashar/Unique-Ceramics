@@ -142,17 +142,17 @@ foreach ($defaults as $k => $v) {
 
 // ---- INSERT DEFAULT CATEGORIES ----
 $cats = [
-    ['Kubki espresso',        'Espresso cups',       'kubki-espresso',        1],
-    ['Zestawy kawowe',        'Coffee sets',          'zestawy-kawowe',        2],
-    ['Talerze i miski',       'Plates & Bowls',       'talerze-i-miski',       3],
-    ['Świeczniki',            'Candle holders',       'swieczniki',            4],
-    ['Dzbanki',               'Pitchers',             'dzbanki',               5],
-    ['Zestawy prezentowe',    'Gift sets',            'zestawy-prezentowe',    6],
+    ['Kubki espresso',     'Espresso cups',    'kubki-espresso',     1, 'products/IMG-20260515-WA0033.jpg'],
+    ['Zestawy kawowe',     'Coffee sets',      'zestawy-kawowe',     2, 'products/IMG-20260515-WA0032.jpg'],
+    ['Talerze i miski',    'Plates & Bowls',   'talerze-i-miski',    3, 'products/IMG-20260515-WA0034.jpg'],
+    ['Świeczniki',         'Candle holders',   'swieczniki',         4, 'products/IMG-20260515-WA0039.jpg'],
+    ['Dzbanki',            'Pitchers',         'dzbanki',            5, 'products/IMG-20260515-WA0048.jpg'],
+    ['Zestawy prezentowe', 'Gift sets',        'zestawy-prezentowe', 6, 'products/IMG-20260515-WA0048.jpg'],
 ];
-foreach ($cats as [$pl, $en, $slug, $order]) {
+foreach ($cats as [$pl, $en, $slug, $order, $img]) {
     $exists = db_fetch('SELECT id FROM categories WHERE slug = ?', [$slug]);
     if (!$exists) {
-        db_insert('categories', ['name_pl' => $pl, 'name_en' => $en, 'slug' => $slug, 'sort_order' => $order, 'active' => 1]);
+        db_insert('categories', ['name_pl' => $pl, 'name_en' => $en, 'slug' => $slug, 'sort_order' => $order, 'image' => $img, 'active' => 1]);
         $log[] = ['ok', "Kategoria dodana: $pl"];
     }
 }
@@ -162,8 +162,10 @@ $catEspresso = db_fetch('SELECT id FROM categories WHERE slug = ?', ['kubki-espr
 $catSets     = db_fetch('SELECT id FROM categories WHERE slug = ?', ['zestawy-kawowe']);
 $catPlates   = db_fetch('SELECT id FROM categories WHERE slug = ?', ['talerze-i-miski']);
 $catCandles  = db_fetch('SELECT id FROM categories WHERE slug = ?', ['swieczniki']);
+$catGifts    = db_fetch('SELECT id FROM categories WHERE slug = ?', ['zestawy-prezentowe']);
 
 $sampleProducts = [
+    // ---- Kubki espresso ----
     [
         'name_pl'        => 'Kubek espresso różowy z serduszkiem',
         'name_en'        => 'Pink espresso cup with heart',
@@ -177,6 +179,55 @@ $sampleProducts = [
         'featured'       => 1,
     ],
     [
+        'name_pl'        => 'Kubki espresso szaro-niebieskie (para)',
+        'name_en'        => 'Grey-blue espresso cups (pair)',
+        'slug'           => 'kubki-espresso-szaro-niebieskie-para',
+        'description_pl' => "Para ręcznie robionych kubków espresso w szaro-niebieskich odcieniach. Szkliwo spływa w dół tworząc niepowtarzalny wzór na każdym kubku. Idealne dla dwojga.",
+        'description_en' => "A pair of handmade espresso cups in grey-blue shades. The glaze flows downwards creating a unique pattern on each cup. Perfect for two.",
+        'price'          => 159.00,
+        'stock'          => 3,
+        'category_id'    => $catEspresso['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0041.jpg']),
+        'featured'       => 1,
+    ],
+    [
+        'name_pl'        => 'Kubki espresso zielone z kwiatkiem (seria)',
+        'name_en'        => 'Green flower espresso cups (series)',
+        'slug'           => 'kubki-espresso-zielone-kwiatek-seria',
+        'description_pl' => "Seria trzech ręcznie robionych kubków espresso w stonowanej zieleni z uroczym motywem kwiatka w reliefie. Każdy kubek lekko się różni — to magia ceramiki artystycznej.",
+        'description_en' => "Series of three handmade espresso cups in muted green with a charming raised flower motif. Each cup differs slightly — the magic of artisan ceramics.",
+        'price'          => 79.00,
+        'stock'          => 3,
+        'category_id'    => $catEspresso['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0042.jpg']),
+        'featured'       => 0,
+    ],
+    [
+        'name_pl'        => 'Kubek espresso Kopernik',
+        'name_en'        => 'Copernicus espresso cup',
+        'slug'           => 'kubek-espresso-kopernik',
+        'description_pl' => "Wyjątkowy kubek espresso z ręcznie rytym portretem Mikołaja Kopernika. Niebieskie wnętrze i artystyczny rysunek czynią go idealnym prezentem dla miłośnika historii i kawy.",
+        'description_en' => "Unique espresso cup with a hand-engraved portrait of Nicolaus Copernicus. Blue interior and artistic drawing make it a perfect gift for history and coffee lovers.",
+        'price'          => 119.00,
+        'stock'          => 4,
+        'category_id'    => $catEspresso['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0046.jpg', 'products/IMG-20260515-WA0044.jpg']),
+        'featured'       => 1,
+    ],
+    [
+        'name_pl'        => 'Kubek espresso różowy z serduszkami (spodek)',
+        'name_en'        => 'Pink espresso cup with hearts and saucer',
+        'slug'           => 'kubek-espresso-rozowy-serduszka-spodek',
+        'description_pl' => "Intensywnie różowy kubek espresso na pasującym spodku z motywem serc. Ciepły, romantyczny kolor i ręczne wykonanie sprawiają, że każdy poranek nabiera wyjątkowego charakteru.",
+        'description_en' => "Vibrant pink espresso cup on a matching saucer with heart motifs. Warm, romantic colour and handmade craftsmanship make every morning special.",
+        'price'          => 99.00,
+        'stock'          => 4,
+        'category_id'    => $catEspresso['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0047.jpg']),
+        'featured'       => 0,
+    ],
+    // ---- Zestawy kawowe ----
+    [
         'name_pl'        => 'Zestaw kawowy zielony z kwiatkiem',
         'name_en'        => 'Green coffee set with flower',
         'slug'           => 'zestaw-kawowy-zielony-kwiatek',
@@ -185,7 +236,7 @@ $sampleProducts = [
         'price'          => 149.00,
         'stock'          => 3,
         'category_id'    => $catSets['id'] ?? null,
-        'images'         => json_encode(['products/IMG-20260515-WA0032.jpg']),
+        'images'         => json_encode(['products/IMG-20260515-WA0043.jpg', 'products/IMG-20260515-WA0032.jpg']),
         'featured'       => 1,
     ],
     [
@@ -213,6 +264,19 @@ $sampleProducts = [
         'featured'       => 1,
     ],
     [
+        'name_pl'        => 'Zestaw kawowy Kopernik',
+        'name_en'        => 'Copernicus coffee set',
+        'slug'           => 'zestaw-kawowy-kopernik',
+        'description_pl' => "Artystyczny zestaw kawowy z ręcznie rytym portretem Mikołaja Kopernika. Kremowe tło, niebieskie wnętrze i unikalny rysunek — wyjątkowy prezent dla miłośnika historii.",
+        'description_en' => "Artistic coffee set with hand-engraved portrait of Nicolaus Copernicus. Cream background, blue interior and unique drawing — a one-of-a-kind gift for history lovers.",
+        'price'          => 189.00,
+        'stock'          => 3,
+        'category_id'    => $catSets['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0044.jpg', 'products/IMG-20260515-WA0045.jpg']),
+        'featured'       => 1,
+    ],
+    // ---- Talerze i miski ----
+    [
         'name_pl'        => 'Miska ceramiczna niebieska',
         'name_en'        => 'Blue ceramic bowl',
         'slug'           => 'miska-ceramiczna-niebieska',
@@ -237,15 +301,65 @@ $sampleProducts = [
         'featured'       => 1,
     ],
     [
-        'name_pl'        => 'Świeczniki gwiazdkowe (3 szt.)',
-        'name_en'        => 'Star candle holders (set of 3)',
-        'slug'           => 'swieczniki-gwiazdkowe-komplet',
-        'description_pl' => "Zestaw trzech świeczników ceramicznych z wyciętymi gwiazdkami. W brązowym, czarnym i zielonym kolorze. Przepięknie oświetlają każde wnętrze.",
-        'description_en' => "Set of three ceramic candle holders with cut-out stars. In brown, black and green. They beautifully illuminate any interior.",
+        'name_pl'        => 'Miska ceramiczna granatowa',
+        'name_en'        => 'Navy ceramic bowl',
+        'slug'           => 'miska-ceramiczna-granatowa',
+        'description_pl' => "Głęboka miska ceramiczna w intensywnym granatowym kolorze z naturalnym surowym spodkiem. Efektowna i funkcjonalna — idealna na zupę, makaron lub sałatkę.",
+        'description_en' => "Deep ceramic bowl in intense navy colour with a natural raw base. Striking and functional — perfect for soup, pasta or salad.",
+        'price'          => 139.00,
+        'stock'          => 4,
+        'category_id'    => $catPlates['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0037.jpg']),
+        'featured'       => 0,
+    ],
+    [
+        'name_pl'        => 'Podkładki ceramiczne komplet (4 szt.)',
+        'name_en'        => 'Ceramic coasters set of 4',
+        'slug'           => 'podkladki-ceramiczne-komplet-4',
+        'description_pl' => "Komplet czterech ceramicznych podkładek z wytłaczanym wzorem liścia w czterech kolorach: niebieski, kremowy, pomarańczowy i szaro-niebieski. Oryginalna dekoracja i ochrona stołu.",
+        'description_en' => "Set of four ceramic coasters with embossed leaf pattern in four colours: blue, cream, orange and grey-blue. Original decoration and table protection.",
+        'price'          => 149.00,
+        'stock'          => 5,
+        'category_id'    => $catPlates['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0036.jpg']),
+        'featured'       => 1,
+    ],
+    // ---- Świeczniki ----
+    [
+        'name_pl'        => 'Świeczniki ażurowe gwiazdkowe (3 szt.)',
+        'name_en'        => 'Openwork star candle holders (set of 3)',
+        'slug'           => 'swieczniki-azurowe-gwiazdkowe-komplet',
+        'description_pl' => "Zestaw trzech ażurowych świeczników ceramicznych z wyciętymi gwiazdkami, księżycami i kwiatkami. W szarobrązowym, różowym i czarnym kolorze. Przepięknie oświetlają każde wnętrze.",
+        'description_en' => "Set of three openwork ceramic candle holders with cut-out stars, moons and flowers. In grey-brown, pink and black. They beautifully illuminate any interior.",
         'price'          => 189.00,
         'stock'          => 3,
         'category_id'    => $catCandles['id'] ?? null,
-        'images'         => json_encode(['products/IMG-20260515-WA0037.jpg']),
+        'images'         => json_encode(['products/IMG-20260515-WA0039.jpg']),
+        'featured'       => 1,
+    ],
+    [
+        'name_pl'        => 'Świeczniki słoneczne (komplet 4 szt.)',
+        'name_en'        => 'Sun candle holders (set of 4)',
+        'slug'           => 'swieczniki-sloneczne-komplet',
+        'description_pl' => "Komplet czterech ceramicznych świeczników ze świecami sojowymi i tłoczonym motywem słońca. Ciemne szkliwo z naturalnym surowym dołem nadaje im rustykalny, elegancki charakter.",
+        'description_en' => "Set of four ceramic candle holders with soy candles and embossed sun motif. Dark glaze with natural raw base gives them a rustic, elegant character.",
+        'price'          => 229.00,
+        'stock'          => 2,
+        'category_id'    => $catCandles['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0038.jpg']),
+        'featured'       => 1,
+    ],
+    // ---- Zestawy prezentowe ----
+    [
+        'name_pl'        => 'Zestaw prezentowy Unique Ceramics',
+        'name_en'        => 'Unique Ceramics gift set',
+        'slug'           => 'zestaw-prezentowy-unique-ceramics',
+        'description_pl' => "Starannie dobrany zestaw prezentowy z kolekcji Unique Ceramics: miska, talerz, kubki espresso i świeczniki. Każdy element ręcznie wykonany — idealny prezent na każdą okazję.",
+        'description_en' => "Carefully selected gift set from the Unique Ceramics collection: bowl, plate, espresso cups and candle holders. Each piece handmade — a perfect gift for any occasion.",
+        'price'          => 349.00,
+        'stock'          => 2,
+        'category_id'    => $catGifts['id'] ?? null,
+        'images'         => json_encode(['products/IMG-20260515-WA0048.jpg']),
         'featured'       => 1,
     ],
 ];
