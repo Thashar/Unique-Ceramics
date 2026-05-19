@@ -232,6 +232,7 @@ p:last-child { margin-bottom: 0; }
   gap: 5px;
   padding: .5rem;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .hamburger span {
   display: block;
@@ -976,8 +977,9 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 640px) {
   .topbar { display: none; }
-  .nav-phone { display: flex; align-items: center; gap: .35rem; font-size: .82rem; font-weight: 600; color: var(--terracotta); text-decoration: none; white-space: nowrap; }
+  .nav-phone { display: flex; align-items: center; gap: .3rem; font-size: .74rem; font-weight: 600; color: var(--terracotta); text-decoration: none; white-space: nowrap; order: 1; }
   .nav-phone:hover { color: var(--clay); }
+  .hamburger { order: -1; }
 }
 
 @media (max-width: 480px) {
