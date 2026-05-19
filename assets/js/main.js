@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch(BASE_PATH + '/cart-action.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
-          body: `action=add&id=${productId}&qty=${qty}&csrf_token=${CSRF_TOKEN}`
+          body: `action=add&id=${productId}&qty=${qty}&csrf_token=${CSRF_TOKEN}&_ajax=1`
         });
         const data = await res.json();
         if (data.success) {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const res = await fetch(BASE_PATH + '/cart-action.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
-        body: `action=update&id=${id}&qty=${qty}&csrf_token=${CSRF_TOKEN}`
+        body: `action=update&id=${id}&qty=${qty}&csrf_token=${CSRF_TOKEN}&_ajax=1`
       });
       const data = await res.json();
       if (data.success) {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch(BASE_PATH + '/cart-action.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Requested-With': 'XMLHttpRequest' },
-          body: `action=remove&id=${id}&csrf_token=${CSRF_TOKEN}`
+          body: `action=remove&id=${id}&csrf_token=${CSRF_TOKEN}&_ajax=1`
         });
         const data = await res.json();
         if (data.success) {

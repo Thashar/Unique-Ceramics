@@ -4,8 +4,8 @@ require_once __DIR__ . '/includes/db.php';
 require_once __DIR__ . '/includes/functions.php';
 require_once __DIR__ . '/includes/cart-functions.php';
 
-$isAjax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) ||
-          (($_SERVER['HTTP_ACCEPT'] ?? '') === 'application/json') ||
+$isAjax = !empty($_POST['_ajax']) ||
+          !empty($_SERVER['HTTP_X_REQUESTED_WITH']) ||
           str_contains($_SERVER['HTTP_ACCEPT'] ?? '', 'application/json');
 
 $action   = $_POST['action'] ?? '';
