@@ -36,10 +36,10 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 <!-- Story -->
 <section class="section" style="background:var(--white)">
   <div class="container">
+    <h2 class="section-title"><?= $isPl ? 'Moja historia' : 'My story' ?></h2>
     <div class="about-section">
       <div>
-        <h2><?= $isPl ? 'Moja historia' : 'My story' ?></h2>
-        <p style="color:var(--stone);line-height:1.8;margin-top:1rem;margin-bottom:1rem"><?= nl2br(h($story)) ?></p>
+        <p style="color:var(--stone);line-height:1.8;margin-bottom:1rem"><?= nl2br(h($story)) ?></p>
         <p style="color:var(--stone);line-height:1.8"><?= nl2br(h($mission)) ?></p>
         <a href="<?= url('custom-order.php') ?>" class="btn btn-primary" style="margin-top:1.5rem">
           <i class="fas fa-paint-brush"></i>

@@ -22,7 +22,6 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 <!-- Hero -->
 <div style="background:linear-gradient(135deg,var(--sand) 0%,var(--cream) 100%);padding:5rem 0;text-align:center">
   <div class="container-sm">
-    <div style="font-size:3rem;margin-bottom:1rem">🏺</div>
     <h1><?= t('workshops.title') ?></h1>
     <p style="color:var(--stone);font-size:1.15rem;margin-top:.8rem"><?= t('workshops.subtitle') ?></p>
   </div>
@@ -31,9 +30,9 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 <!-- Intro -->
 <section class="section" style="background:var(--white)">
   <div class="container">
+    <h2 class="section-title"><?= $isPl ? 'Odkryj radość lepienia!' : 'Discover the joy of pottery!' ?></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
       <div>
-        <h2><?= $isPl ? 'Odkryj radość lepienia!' : 'Discover the joy of pottery!' ?></h2>
         <?php
         $default_intro1 = $isPl
             ? 'Organizujemy warsztaty ceramiczne dla grup i indywidualnych uczestników. Idealne na urodziny, wieczory panieńskie, imprezy firmowe czy po prostu wyjątkowy wieczór z przyjaciółmi. Nie potrzebujesz żadnego doświadczenia — wszystkiego nauczymy Cię od podstaw.'

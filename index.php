@@ -137,6 +137,7 @@ $categories  = get_categories();
 <!-- ABOUT SECTION -->
 <section class="section" style="background:var(--white)">
   <div class="container">
+    <h2 class="section-title"><?= t('home.about_title') ?></h2>
     <div class="about-section">
       <div class="about-images">
         <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260508-WA0011.jpg"
@@ -148,8 +149,7 @@ $categories  = get_categories();
              onerror="this.style.display='none'">
       </div>
       <div>
-        <h2><?= t('home.about_title') ?></h2>
-        <p style="color:var(--stone);line-height:1.75;margin:1rem 0 1.5rem"><?= t('home.about_text') ?></p>
+        <p style="color:var(--stone);line-height:1.75;margin:0 0 1.5rem"><?= t('home.about_text') ?></p>
         <a href="<?= url('about.php') ?>" class="btn btn-primary">
           <?= t('home.about_cta') ?> <i class="fas fa-arrow-right"></i>
         </a>

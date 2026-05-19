@@ -142,7 +142,7 @@ $isPl = current_lang() === 'pl';
 <!-- Instagram CTA -->
 <section class="section-sm" style="background:var(--sand)">
   <div class="container text-center">
-    <h2><?= $isPl ? 'Śledź nas na Instagramie' : 'Follow us on Instagram' ?></h2>
+    <h2 class="section-title"><?= $isPl ? 'Śledź nas na Instagramie' : 'Follow us on Instagram' ?></h2>
     <p style="color:var(--stone);margin:.8rem 0 1.5rem">
       <?= $isPl ? 'Bądź na bieżąco z nowościami i zakulisowymi zdjęciami z pracowni!' : 'Stay up to date with new pieces and behind-the-scenes photos from the studio!' ?>
     </p>

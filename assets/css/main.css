@@ -76,10 +76,10 @@ p:last-child { margin-bottom: 0; }
 /* === LAYOUT === */
 .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
 .container-sm { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
-.section { padding-top: 1.75rem; padding-bottom: 1rem; }
-.section-sm { padding-top: 1rem; padding-bottom: .6rem; }
-.section-title { text-align: center; margin-bottom: .8rem; }
-.section-sub   { text-align: center; color: var(--stone); margin-bottom: 2.5rem; font-size: 1.05rem; }
+.section { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+.section-sm { padding-top: 1rem; padding-bottom: 1rem; }
+.section-title { text-align: center; margin-bottom: 1.5rem; }
+.section-sub   { text-align: center; color: var(--stone); margin-bottom: 2rem; font-size: 1.05rem; }
 
 /* === BUTTONS === */
 .btn {
@@ -716,7 +716,7 @@ p:last-child { margin-bottom: 0; }
   background: linear-gradient(135deg, var(--clay) 0%, var(--terracotta) 100%);
   color: var(--white);
   border-radius: var(--radius-lg);
-  padding: 3.5rem 2rem;
+  padding: 1.8rem 2rem;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 2rem;
