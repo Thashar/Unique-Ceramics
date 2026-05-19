@@ -117,7 +117,7 @@ $isPl = current_lang() === 'pl';
         <h3 style="margin-bottom:1rem"><?= $isPl ? 'Najczęstsze pytania' : 'FAQ' ?></h3>
         <?php
         $faqs = $isPl ? [
-          ['Jak długo trwa realizacja zamówienia?', 'Standardowe zamówienia wysyłamy w 3–5 dni roboczych. Zamówienia indywidualne to zazwyczaj 2–4 tygodnie.'],
+          ['Jak długo trwa realizacja zamówienia?', 'Standardowe zamówienia wysyłamy w 3–5 dni roboczych. Zamówienia indywidualne to zazwyczaj od 4 tygodni.'],
           ['Czy mogę odebrać zamówienie osobiście?', 'Odbiór osobisty jest możliwy po wcześniejszym umówieniu przez telefon lub Instagram.'],
           ['Czy ceramika nadaje się do zmywarki?', 'Tak, ceramika nadaje się do zmywarki.'],
           ['Czy robicie ceramikę z personalizacją?', 'Tak! Możemy wgryźć, namalować lub wytłoczyć dowolny wzór, tekst lub dedykację.'],

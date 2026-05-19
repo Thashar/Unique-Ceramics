@@ -140,7 +140,7 @@ return [
         'deadline'    => 'Oczekiwany termin realizacji',
         'submit'      => 'Wyślij zapytanie',
         'success'     => 'Dziękuję! Skontaktuję się z Tobą w ciągu 48 godzin.',
-        'note'        => 'Pamiętaj — czas realizacji zamówień indywidualnych to zazwyczaj 2–4 tygodnie.',
+        'note'        => 'Pamiętaj — czas realizacji zamówień indywidualnych to zazwyczaj od 4 tygodni.',
     ],
     'about' => [
         'title'   => 'O mnie',
