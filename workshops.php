@@ -103,14 +103,14 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 <section class="section" style="background:var(--cream)">
   <div class="section-head"><div class="container"><h2 class="section-title"><?= $isPl ? 'Co zawiera warsztat?' : "What's included?" ?></h2></div></div>
   <div class="container">
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:1.5rem">
+    <div class="includes-grid">
       <?php
       $default_inc = $isPl
         ? ["🏺 Materiały (glina, narzędzia)","👩‍🏫 Prowadzenie przez ceramiczkę","🔥 Wypalanie Twoich prac","📦 Gotowe wyroby do odbioru","📸 Pamiątkowe zdjęcia","☕ Napoje podczas warsztatów"]
         : ["🏺 Materials (clay, tools)","👩‍🏫 Guidance by a ceramicist","🔥 Firing of your pieces","📦 Finished pieces to collect","📸 Souvenir photos","☕ Drinks during the workshop"];
       $inc_items = $inc_raw ? array_filter(array_map('trim', explode("\n", $inc_raw))) : $default_inc;
       foreach ($inc_items as $item): ?>
-        <div style="background:var(--sand);border-radius:8px;padding:.9rem 1rem;font-size:.9rem;font-weight:600">
+        <div class="includes-tile">
           <?= h($item) ?>
         </div>
       <?php endforeach; ?>
