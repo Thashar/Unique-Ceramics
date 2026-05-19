@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <div class="login-box">
   <div class="login-logo">
-    <img src="<?= BASE_PATH ?>/assets/images/logo.png" alt="<?= SITE_NAME ?>" onerror="this.style.display='none'">
+    <img src="<?= BASE_PATH ?>/assets/images/logo.png?v=<?= filemtime(ROOT_DIR . '/assets/images/logo.png') ?>" alt="<?= SITE_NAME ?>" onerror="this.style.display='none'">
     <h1><?= SITE_NAME ?></h1>
     <p>Panel administracyjny</p>
   </div>

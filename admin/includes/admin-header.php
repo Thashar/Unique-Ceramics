@@ -20,7 +20,7 @@ $adminName = $_SESSION['admin_name'] ?? 'Admin';
 <!-- SIDEBAR -->
 <aside class="admin-sidebar" id="adminSidebar">
   <div class="sidebar-logo">
-    <img src="<?= BASE_PATH ?>/assets/images/logo.png" alt="UC" onerror="this.style.display='none'">
+    <img src="<?= BASE_PATH ?>/assets/images/logo.png?v=<?= filemtime(ROOT_DIR . '/assets/images/logo.png') ?>" alt="UC" onerror="this.style.display='none'">
     <div class="sidebar-logo-text">
       <?= SITE_NAME ?>
       <small>Panel administracyjny</small>
