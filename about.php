@@ -15,16 +15,6 @@ require_once __DIR__ . '/includes/header.php';
   </div>
 </div>
 
-<!-- About photo full-width -->
-<div style="background:var(--white);padding-top:2.5rem">
-  <div class="container">
-    <img src="<?= BASE_PATH ?>/assets/images/about-photo.jpg"
-         alt="Unique Ceramics — ceramika na wystawie"
-         style="width:100%;max-height:480px;object-fit:cover;border-radius:var(--radius-lg)"
-         onerror="this.style.display='none'">
-  </div>
-</div>
-
 <!-- Story -->
 <section class="section" style="background:var(--white)">
   <div class="container">
@@ -38,12 +28,10 @@ require_once __DIR__ . '/includes/header.php';
           <?= current_lang() === 'pl' ? 'Zamów swoją ceramikę' : 'Order your ceramics' ?>
         </a>
       </div>
-      <div class="about-images">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0033.jpg" alt="Ceramiczny kubek"
-             onerror="this.style.display='none'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0040.jpg" alt="Zestaw ceramiczny"
-             onerror="this.style.display='none'">
-        <img src="<?= BASE_PATH ?>/uploads/products/IMG-20260515-WA0043.jpg" alt="Warsztaty ceramiczne"
+      <div style="display:flex;align-items:flex-start;justify-content:center">
+        <img src="<?= BASE_PATH ?>/assets/images/about-photo.jpg"
+             alt="Unique Ceramics — ceramika na wystawie"
+             style="width:100%;max-width:420px;border-radius:var(--radius-lg);object-fit:cover"
              onerror="this.style.display='none'">
       </div>
     </div>
