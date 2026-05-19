@@ -9,7 +9,9 @@
       "Bash(dir \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\assets\\\\images\")",
       "Bash(dir \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\uploads\\\\products\")",
       "Bash(Select-Object -First 20)",
-      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\" -File | Where-Object { $_.Extension -match \"\\\\.\\(jpg|jpeg|png|gif|webp\\)\" })"
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\" -File | Where-Object { $_.Extension -match \"\\\\.\\(jpg|jpeg|png|gif|webp\\)\" })",
+      "Bash(copy \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\uploads\\\\products\\\\IMG-20260515-WA0032.jpg\" \"c:\\\\Users\\\\Thash\\\\Desktop\\\\Bots\\\\Strona\\\\assets\\\\images\\\\hero.jpg\")",
+      "WebFetch(domain:pilarts.pl)"
     ]
   }
 }
