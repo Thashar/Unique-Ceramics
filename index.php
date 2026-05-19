@@ -34,7 +34,7 @@ $categories  = get_categories();
 </section>
 
 <!-- VALUES -->
-<section class="section-sm" style="background:var(--white)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container">
     <div class="values-grid">
       <?php foreach (t('home.values') as $val): ?>
@@ -75,7 +75,7 @@ $categories  = get_categories();
 
 <!-- FEATURED PRODUCTS -->
 <?php if (!empty($featured)): ?>
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
   <div class="container">
     <h2 class="section-title"><?= t('home.featured_title') ?></h2>
     <p class="section-sub"><?= t('home.featured_sub') ?></p>
@@ -135,7 +135,7 @@ $categories  = get_categories();
 <?php endif; ?>
 
 <!-- ABOUT SECTION -->
-<section class="section" style="background:var(--white)">
+<section class="section" style="background:var(--cream)">
   <div class="container">
     <h2 class="section-title"><?= t('home.about_title') ?></h2>
     <div class="about-section">
@@ -174,7 +174,7 @@ $categories  = get_categories();
 </section>
 
 <!-- INSTAGRAM -->
-<section class="section-sm" style="background:var(--sand)">
+<section class="section-sm" style="background:var(--cream)">
   <div class="container text-center">
     <h2 class="section-title"><?= t('home.insta_title') ?></h2>
     <p style="margin-bottom:1.5rem;color:var(--stone)">

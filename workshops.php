@@ -28,7 +28,7 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 </div>
 
 <!-- Intro -->
-<section class="section" style="background:var(--white)">
+<section class="section" style="background:var(--cream)">
   <div class="container">
     <h2 class="section-title"><?= $isPl ? 'Odkryj radość lepienia!' : 'Discover the joy of pottery!' ?></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
@@ -59,7 +59,7 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 
 <?php if ($show_types): ?>
 <!-- Workshop types -->
-<section class="section" style="background:var(--sand)">
+<section class="section" style="background:var(--cream)">
   <div class="container">
     <h2 class="section-title"><?= $isPl ? 'Rodzaje warsztatów' : 'Workshop types' ?></h2>
     <div class="workshop-cards">
@@ -100,7 +100,7 @@ $show_includes = get_setting('page_workshops_show_includes', '1') === '1';
 
 <?php if ($show_includes): ?>
 <!-- What's included -->
-<section class="section" style="background:var(--white)">
+<section class="section" style="background:var(--cream)">
   <div class="container">
     <h2 class="section-title"><?= $isPl ? 'Co zawiera warsztat?' : "What's included?" ?></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-top:1.5rem">
