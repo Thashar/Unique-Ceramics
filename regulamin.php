@@ -6,6 +6,7 @@ require_once __DIR__ . '/includes/functions.php';
 $pageTitle = current_lang() === 'pl' ? 'Regulamin sklepu' : 'Terms & Conditions';
 require_once __DIR__ . '/includes/header.php';
 $isPl = current_lang() === 'pl';
+$custom_content = $isPl ? get_setting('page_regulamin_pl') : get_setting('page_regulamin_en');
 ?>
 
 <div style="background:var(--sand);padding:3rem 0;text-align:center">
@@ -19,7 +20,9 @@ $isPl = current_lang() === 'pl';
 
 <div class="container section" style="max-width:860px">
 
-<?php if ($isPl): ?>
+<?php if ($custom_content): ?>
+  <?= $custom_content ?>
+<?php elseif ($isPl): ?>
 
   <h2>I. Postanowienia ogólne</h2>
   <ol>

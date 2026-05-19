@@ -166,7 +166,8 @@ p:last-child { margin-bottom: 0; }
   gap: .75rem;
   flex-shrink: 0;
 }
-.logo-img { width: 48px; height: 48px; object-fit: contain; mix-blend-mode: multiply; }
+.logo-img { width: 48px; height: 48px; object-fit: contain; }
+.nav-phone { display: none; }
 .logo-text { font-family: var(--font-head); font-size: 1.25rem; font-weight: 700; line-height: 1.1; }
 .logo-text span { display: block; font-size: .7rem; font-family: var(--font-body); font-weight: 400; color: var(--stone); letter-spacing: .08em; text-transform: uppercase; }
 
@@ -732,8 +733,8 @@ p:last-child { margin-bottom: 0; }
 /* === CONTACT PAGE === */
 .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
 .contact-card { background: var(--white); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-sm); }
-.contact-info-row { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.2rem; }
-.contact-info-icon { font-size: 1.4rem; margin-top: .1rem; flex-shrink: 0; }
+.contact-info-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.2rem; }
+.contact-info-icon { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
 .contact-info-label { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--stone); }
 .contact-info-val { font-weight: 600; }
 
@@ -975,6 +976,8 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 640px) {
   .topbar { display: none; }
+  .nav-phone { display: flex; align-items: center; gap: .35rem; font-size: .82rem; font-weight: 600; color: var(--terracotta); text-decoration: none; white-space: nowrap; }
+  .nav-phone:hover { color: var(--clay); }
 }
 
 @media (max-width: 480px) {

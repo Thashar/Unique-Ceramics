@@ -57,6 +57,11 @@ $adminName = $_SESSION['admin_name'] ?? 'Admin';
       <?php endif; ?>
     </a>
 
+    <div class="sidebar-nav-label">Treści</div>
+    <a href="<?= BASE_PATH ?>/admin/pages.php" class="<?= $adminPage === 'pages' ? 'active' : '' ?>">
+      <span class="nav-icon"><i class="fas fa-file-edit"></i></span> Edytor stron
+    </a>
+
     <div class="sidebar-nav-label">System</div>
     <a href="<?= BASE_PATH ?>/admin/settings.php" class="<?= $adminPage === 'settings' ? 'active' : '' ?>">
       <span class="nav-icon"><i class="fas fa-cog"></i></span> Ustawienia

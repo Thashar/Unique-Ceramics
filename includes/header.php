@@ -74,6 +74,9 @@ $isAdmin = strpos($_SERVER['PHP_SELF'], '/admin/') !== false;
 
       <!-- Actions -->
       <div class="nav-actions">
+        <a href="tel:<?= str_replace(' ', '', SITE_PHONE) ?>" class="nav-phone">
+          <i class="fas fa-phone-alt"></i> <?= SITE_PHONE ?>
+        </a>
         <a href="<?= url('cart.php') ?>" class="cart-btn" aria-label="<?= t('nav.cart') ?>">
           <i class="fas fa-shopping-bag"></i>
           <span class="d-none d-sm-inline"><?= t('nav.cart') ?></span>
