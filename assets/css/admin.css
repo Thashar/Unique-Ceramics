@@ -84,7 +84,7 @@ p  { margin-bottom: .6rem; }
   padding: 1.2rem 1rem;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.sidebar-logo img { width: 36px; filter: brightness(2); }
+.sidebar-logo img { width: 36px; filter: brightness(0) invert(1); }
 .sidebar-logo-text { font-family: var(--font-head); font-size: 1rem; color: var(--white); line-height: 1.1; }
 .sidebar-logo-text small { display: block; font-family: var(--font-body); font-size: .65rem; color: rgba(255,255,255,.45); text-transform: uppercase; letter-spacing: .06em; font-weight: 400; }
 

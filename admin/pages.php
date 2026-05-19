@@ -387,17 +387,9 @@ require __DIR__ . '/includes/admin-header.php';
 
   <div class="card" style="margin-bottom:1.2rem">
     <div class="form-section-title">Widoczność sekcji</div>
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:.4rem">
-      <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer">
-        <input type="checkbox" name="show_values"  <?= $show_values  === '1' ? 'checked' : '' ?>> Sekcja "Wartości"
-      </label>
-      <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer">
-        <input type="checkbox" name="show_process" <?= $show_process === '1' ? 'checked' : '' ?>> Sekcja "Jak powstaje ceramika?"
-      </label>
-      <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer">
-        <input type="checkbox" name="show_gallery" <?= $show_gallery === '1' ? 'checked' : '' ?>> Sekcja "Moje prace" (galeria)
-      </label>
-    </div>
+    <div style="margin-bottom:.5rem"><input type="checkbox" id="sw_values" name="show_values" <?= $show_values === '1' ? 'checked' : '' ?>><label for="sw_values" style="cursor:pointer;margin-left:.45rem">Sekcja "Wartości"</label></div>
+    <div style="margin-bottom:.5rem"><input type="checkbox" id="sw_process" name="show_process" <?= $show_process === '1' ? 'checked' : '' ?>><label for="sw_process" style="cursor:pointer;margin-left:.45rem">Sekcja "Jak powstaje ceramika?"</label></div>
+    <div><input type="checkbox" id="sw_gallery" name="show_gallery" <?= $show_gallery === '1' ? 'checked' : '' ?>><label for="sw_gallery" style="cursor:pointer;margin-left:.45rem">Sekcja "Moje prace" (galeria)</label></div>
   </div>
 
   <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Zapisz stronę "O mnie"</button>
@@ -500,14 +492,8 @@ require __DIR__ . '/includes/admin-header.php';
 
   <div class="card" style="margin-bottom:1.2rem">
     <div class="form-section-title">Widoczność sekcji</div>
-    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:.4rem">
-      <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer">
-        <input type="checkbox" name="show_ws_types"    <?= $show_ws_types    === '1' ? 'checked' : '' ?>> Sekcja "Rodzaje warsztatów"
-      </label>
-      <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer">
-        <input type="checkbox" name="show_ws_includes" <?= $show_ws_includes === '1' ? 'checked' : '' ?>> Sekcja "Co zawiera warsztat?"
-      </label>
-    </div>
+    <div style="margin-bottom:.5rem"><input type="checkbox" id="sw_ws_types" name="show_ws_types" <?= $show_ws_types === '1' ? 'checked' : '' ?>><label for="sw_ws_types" style="cursor:pointer;margin-left:.45rem">Sekcja "Rodzaje warsztatów"</label></div>
+    <div><input type="checkbox" id="sw_ws_includes" name="show_ws_includes" <?= $show_ws_includes === '1' ? 'checked' : '' ?>><label for="sw_ws_includes" style="cursor:pointer;margin-left:.45rem">Sekcja "Co zawiera warsztat?"</label></div>
   </div>
 
   <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Zapisz stronę "Warsztaty"</button>
