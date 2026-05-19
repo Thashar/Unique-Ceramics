@@ -26,7 +26,7 @@ $show_gallery = get_setting('page_about_show_gallery', '1') === '1';
 ?>
 
 <!-- Hero -->
-<div style="background:var(--sand);padding:4rem 0;text-align:center">
+<div style="background:linear-gradient(135deg,var(--sand) 0%,var(--cream) 100%);padding:4rem 0;text-align:center">
   <div class="container-sm">
     <h1><?= t('about.title') ?></h1>
     <p style="color:var(--stone);font-size:1.15rem;margin-top:.8rem;font-style:italic"><?= h($about_quote) ?></p>
